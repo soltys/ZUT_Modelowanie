@@ -1,12 +1,12 @@
 Model {
-  Name			  "sprzezyna_wahadlo_online"
+  Name			  "sprezyna_wahadlo_online"
   Version		  7.5
   MdlSubVersion		  0
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.14"
+    ComputedModelVersion    "1.15"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -25,9 +25,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Soltys"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sun Dec 30 19:36:05 2012"
-  RTWModifiedTimeStamp	  278795655
-  ModelVersionFormat	  "1.%<AutoIncrement:14>"
+  LastModifiedDate	  "Mon Dec 31 19:12:11 2012"
+  RTWModifiedTimeStamp	  278881917
+  ModelVersionFormat	  "1.%<AutoIncrement:15>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -656,7 +656,7 @@ Model {
     }
   }
   System {
-    Name		    "sprzezyna_wahadlo_online"
+    Name		    "sprezyna_wahadlo_online"
     Location		    [266, 397, 802, 698]
     Open		    on
     ModelBrowserVisibility  off
@@ -703,7 +703,7 @@ Model {
       System {
 	Name			"Subsystem"
 	Location		[855, 214, 1741, 466]
-	Open			on
+	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -786,7 +786,7 @@ Model {
 	  SID			  27
 	  Ports			  [1]
 	  Position		  [825, 139, 960, 181]
-	  FunctionName		  "sprzezyna_wahadlo_sfun"
+	  FunctionName		  "sprezyna_wahadlo_sfun"
 	  Parameters		  "mk,mw,l,g,c,k1,k2,phi0,z0,t0"
 	  EnableBusSupport	  off
 	}

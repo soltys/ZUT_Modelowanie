@@ -43,7 +43,7 @@ if ishandle(fig)
      ud = get(fig,'UserData');
 g = -1;
 springY = [l*2/20,0];
-delta = abs(g-u(1))/4;
+delta = abs(g-u(1))/6;
 set(ud.spring1, 'XData',[g,g+delta],'YData',springY);    
     g = g + delta;
     springY = fliplr(springY);
@@ -54,8 +54,12 @@ set(ud.spring1, 'XData',[g,g+delta],'YData',springY);
     g = g + delta;
     springY = fliplr(springY);
     set(ud.spring4, 'XData',[g,g+delta],'YData',springY);
-    
-    
+        g = g + delta;
+    springY = fliplr(springY);
+    set(ud.spring5, 'XData',[g,g+delta],'YData',springY);
+        g = g + delta;
+    springY = fliplr(springY);
+    set(ud.spring6, 'XData',[g,g+delta],'YData',springY);
      x1 =-l*sin(u(2)) + u(1);
     y1 = -l*cos(u(2));
 
@@ -84,7 +88,7 @@ y1 = -l*cos(u2);
 
 g = -1;
 springY = [0,l/5];
-delta = abs(g-z0)/4;
+delta = abs(g-z0)/6;
     
 spring1 =    line('XData',[g,g+delta],'YData',springY,'Color','k');    
     g = g + delta;
@@ -97,7 +101,12 @@ spring1 =    line('XData',[g,g+delta],'YData',springY,'Color','k');
     springY = fliplr(springY);
     spring4 =    line('XData',[g,g+delta],'YData',springY,'Color','k');    
     
-
+ g = g + delta;
+    springY = fliplr(springY);
+    spring5 =    line('XData',[g,g+delta],'YData',springY,'Color','k');  
+    g = g + delta;
+    springY = fliplr(springY);
+    spring6 =    line('XData',[g,g+delta],'YData',springY,'Color','k'); 
     
 
 block =  rectangle('Curvature', [0 0],'Position', [z0 0 l*2/5 l/5], 'FaceColor', 'b','EdgeColor','b');
@@ -116,6 +125,8 @@ FigUD.spring1 = spring1;
 FigUD.spring2 = spring2;
 FigUD.spring3 = spring3;
 FigUD.spring4 = spring4;
+FigUD.spring5 = spring5;
+FigUD.spring6 = spring6;
 set(Fig,'UserData',FigUD);
 set_param(gcbh,'UserData',Fig);
 end
